@@ -11,4 +11,5 @@ phone_manager = 88005553535
 [send_from]
 my_email =
 my_password =
-
+smtp_server =
+smtp_port =

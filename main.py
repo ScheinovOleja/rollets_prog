@@ -13,8 +13,6 @@ from pathlib import Path
 
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
-from docx import Document
-from docx.shared import Inches
 from docxtpl import DocxTemplate
 from pony.orm import db_session
 from win32com import client
