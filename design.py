@@ -289,7 +289,7 @@ class Ui_MainWindow(object):
         self.label_6.setText(_translate("MainWindow", "руб."))
         self.label_7.setText(_translate("MainWindow", "Работы по установке:"))
         self.label_8.setText(_translate("MainWindow", "руб."))
-        self.label_9.setText(_translate("MainWindow", "Итоговая стоимость товара:"))
+        self.label_9.setText(_translate("MainWindow", "Итоговая стоимость заказа:"))
         self.label_10.setText(_translate("MainWindow", "руб."))
         self.label_13.setText(_translate("MainWindow", "Срок производства:"))
         self.label_14.setText(_translate("MainWindow", "дней."))

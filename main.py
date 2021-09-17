@@ -273,7 +273,7 @@ class MainWindow(QMainWindow):
         return all_automatic, total_price_automatic
 
     def get_price_services(self):
-        root = self.ui.treeWidget_2.invisibleRootItem()
+        root = self.ui.treeWidget.invisibleRootItem()
         child_count = root.childCount()
         total_price_services = 0
         for i in range(child_count):
@@ -591,8 +591,7 @@ class MainWindow(QMainWindow):
             except Exception as exc:
                 QMessageBox.critical(self, 'Ошибка', f'Произошла ошибка!\nНевозможно отправить сообщение!\n{exc}')
                 return
-            QMessageBox.information(self, 'Успех!', f'Письмо успешно отправлено на почту {context["email"]}!')
-            return
+            return QMessageBox.information(self, 'Успех!', f'Письмо успешно отправлено на почту {context["email"]}!')
         else:
             return
 
