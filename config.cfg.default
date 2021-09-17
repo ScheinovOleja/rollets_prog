@@ -7,3 +7,8 @@ phone_manager = 88005553535
 full_name_manager = Петров Петр Петрович
 email_manager = example2@example.com
 phone_manager = 88005553535
+
+[send_from]
+my_email =
+my_password =
+

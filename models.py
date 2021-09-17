@@ -1,21 +1,8 @@
-import datetime
-
 from pony.orm import Database, PrimaryKey, Required
+
 
 db = Database()
 db.bind(provider='sqlite', filename='database.sqlite', create_db=True)
-
-
-class Rollers(db.Entity):
-    _table_ = 'rollers'
-    id = PrimaryKey(int, auto=True)
-    code = Required(int)
-    name = Required(str)
-    vendor = Required(str)
-    color = Required(str)
-    unit = Required(str)
-    price = Required(float)
-    availability = Required(int)
 
 
 class DataNumDoc(db.Entity):
@@ -32,4 +19,5 @@ class AutomationData(db.Entity):
     price_automatic = Required(float)
 
 
-db.generate_mapping(create_tables=True)
+def run():
+    db.generate_mapping(create_tables=True)
